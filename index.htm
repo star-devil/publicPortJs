@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>公共接口测试界面</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="btn">
@@ -21,18 +23,19 @@
             <button class="portEnterBtn" data-class="TaoBao">淘宝</button>
         </div>
         <div class="btn">
-            <button class="portEnterBtn" >空测试</button>
+            <button class="portEnterBtn">空测试</button>
         </div>
         <div class="btn">
             <button class="portEnterBtn" data-class="other">其他测试</button>
         </div>
     </div>
 </body>
-<script src="jquery-3.3.1.js"></script>
-<script src="publicPort.js"></script>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/publicPort.js"></script>
 <script>
+    // 加密
     // 第一个参数是json数据、第二个参数是触发事件的dom类名、第三个是dom中对应的目标页面标识参数
-    publicPortFun(inParam, 'portEnterBtn', 'data-class');
-
+    encode.publicPortFun(inParam, 'portEnterBtn', 'data-class');
 </script>
+
 </html>

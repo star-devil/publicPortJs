@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="crow">
+    <title>患者全息图-登录</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../src/plug/bootstrap_3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../src/plug/bootstrap_3.3.5/css/bootstrap-select.css" rel="stylesheet">
+
+    <link href="../src/plug/datatable_1.10.4/media/css/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../src/plug/bootstrap_3.3.5/forIE/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../src/plug/bootstrap_3.3.5/forIE/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="../lib/bootstrap_3.3.5/forIE/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../src/plug/bootstrap_3.3.5/forIE/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <link rel="stylesheet" href="../src/plug/font-awesome_4.4.0/css/font-awesome.min.css">
+
+</head>
+<style type="text/css">
+    html {
+        font-size: 312.5%;
+        overflow: hidden;
+    }
+
+    .login-page {
+        width: 27.216rem;
+        height: 12.984rem;
+        padding: 0;
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #469bd0 url("../src/img/login_bg.png") center no-repeat;
+        background-attachment: fixed;
+        background-size: auto;
+        background-size: auto auto;
+    }
+
+    /*--emr-login-header-- */
+    .emr-login-header {
+        width: auto;
+        height: 1.92rem;
+        background: #ffffff;
+        padding: 0.24rem 0.881rem;
+        position: relative;
+    }
+
+    .login-header-font {
+        font-size: 0.6rem;
+        height: 0.72rem;
+        line-height: 0.72rem;
+        position: absolute;
+        top: 35%;
+        color: #333333;
+        margin-left: 0.456rem;
+        padding-left: 0.456rem;
+        border-left: 2px solid #333333;
+    }
+
+    .login-header-logo {
+        height: 1.44rem;
+        min-width: 3.5rem;
+        display: inline-block;
+        position: relative;
+        top: 0.1rem;
+        left: 0.4rem;
+        background: url("../src/img/logo1.png") center no-repeat;
+    }
+
+    .login-header-logo>p {
+        font-size: 0.48rem;
+        position: absolute;
+        top: 0;
+        right: 0.11rem;
+        color: orange;
+        z-index: 10;
+
+    }
+
+    /*--emr-login-header End-- */
+    /*emr-login-body*/
+    .emr-login-body {
+        width: auto;
+        height: 9.07rem;
+        padding: 0;
+        position: relative;
+    }
+
+    .emr-login-body .login-from {
+        width: 6.29rem;
+        height: 6.72rem;
+        position: absolute;
+        right: 2.99rem;
+        top: 1.2rem;
+        z-index: 10;
+        padding: 0.48rem;
+        background-color: #ffffff;
+        font-size: 0.32rem;
+        color: #333333;
+        border-radius: 8px;
+    }
+
+    .emr-login-body .login-from p {
+        font-size: 0.36rem;
+        color: #333333;
+        width: auto;
+        height: 0.72rem;
+        line-height: 0.72rem;
+        text-align: center;
+        letter-spacing: 0.05rem;
+    }
+
+    .emr-login-body .login-from .login-user-logo {
+        position: absolute;
+        z-index: 100;
+        top: 1.86rem;
+        left: 0.72rem;
+        font-size: 0.32rem;
+        color: #bbbbbb;
+    }
+
+    .emr-login-body .login-from .login-password-logo {
+        position: absolute;
+        z-index: 100;
+        top: 3.12rem;
+        left: 0.72rem;
+        font-size: 0.32rem;
+        color: #bbbbbb;
+    }
+
+    .emr-login-body .login-from .login-form-control {
+        background: #f6f6f6;
+        ;
+        height: 0.83rem;
+        margin-top: 0.42rem;
+        text-indent: 0.72rem;
+        line-height: 0.83rem;
+        padding: 0 0;
+        border-radius: 0;
+    }
+
+    .emr-login-body .login-from .login-btn {
+        background-color: #45a4df;
+        width: 5.106rem;
+        border-radius: 0;
+        font-size: 0.36rem;
+        position: relative;
+        left: 0.156rem;
+        color: #ffffff;
+        margin-top: 0.5rem;
+        text-shadow: #666 1px 1px 1px;
+    }
+
+    .emr-login-body .login-from .login-btn:hover {
+        background-color: #9aceef;
+    }
+
+    /*emr-login-body End*/
+    /*hip-login-footer*/
+    .hip-login-footer {
+        background-color: #ffffff;
+        font-size: 0.36rem;
+        width: auto;
+        height: 2rem;
+        color: #333333;
+        text-align: center;
+        line-height: 0.6rem;
+        padding-top: 0.48rem;
+    }
+
+    /*--------------------------------login.csp END--------------------------*/
+</style>
+
+<body>
+    <div class="container-fluid login-page">
+        <div class="emr-login-header">
+            <span class="login-header-logo"></span><span class="login-header-font">医院信息平台</span>
+        </div>
+        <div class="emr-login-body">
+            <div class="login-from">
+                <form id="loginForm">
+                    <p>欢迎登录患者全息图</p>
+                    <input type="text" class="form-control login-form-control" name="acount"
+                        placeholder="请输入帐号"></input>
+                    <span class="glyphicon glyphicon-user login-user-logo"></span>
+                    <input type="password" class="form-control login-form-control" name="password"
+                        placeholder="请输入密码"></input>
+                    <span class="glyphicon glyphicon-lock login-password-logo"></span>
+                    <botton class="btn login-btn " value="登录" id="submitBtn">登录</botton>
+                </form>
+
+            </div>
+        </div>
+        <footer class="hip-login-footer">
+            <p>HIP2.0</p>
+            <p>版权所有2017 &copy;东华软件股份公司。保留所有权利。</p>
+        </footer>
+    </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/publicPort.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
