@@ -5,7 +5,6 @@
 //解密
 //把解密的对象存起来
 var unencodeObj = unencode.unencodeFun();
-
 var PROXY_URL = "http://47.92.71.231:57772/emrviewdoctor/csp/EMRView.Biz.Proxy.loadPageNew.cls?"	// 后台入口
 // function commomAjaxString(action, params) {
 //     var reData = '';
@@ -43,13 +42,13 @@ function loginVali() {
         var url;
         var acount, pwd, inputstr;
         var acount = $.trim($("input[name=acount]").val());
-        console.log(acount)
         var pwd = $.trim($("input[name=password]").val());
-        unencodeObj.data["DocCode"] = acount;
         if (acount != "" && pwd != "") {
-            // $('#loginForm').commomAjaxString();
+            unencodeObj.data["DocCode"] = acount;
+            //将数据存入sessionStorage中
+            sessionStorage.setItem('unencodeObj',JSON.stringify(unencodeObj));
             if(unencodeObj.data["PATPatientID"] == '') {
-                window.location.href = unencodeObj["IP"] + '/patientIndex.html';
+                window.location.href = unencodeObj["targetIP"] + '/patientIndex.html';
             }else{
                 window.location.href = unencodeObj["localHtmlUrl"];
             }
