@@ -21,6 +21,24 @@
 - 判断跳转时用参数下标(代表点击的跳转是TaoBao)：
 `if (btn_param_str && $.inArray(btn_param_str, btn_param_arr) == 3)`
 
+# 入参字段 #
+
+**基本字段**
+|字段名|字段值|是否必须|
+ |:--|:---|：--|
+ |HospitalCode|院区编号|是|
+ |PATPatientID|患者id|是|
+ |DocCode|当前登录的医生编号|否|
+ |DocGroup|当前登录医生的组别|否|
+ |DocDept|当前登录医生的科室|是|
+ |role|当前登录人的管理角色|是|
+ |token|一些信息|否|
+
+# 函数使用方法 #
+在需要加密的页面中直接用
+` publicPortFun.prototype.encode(参数1, 参数2, 参数3);`
+在需要解密的页面中yinyong
+`publicPortFun.prototype.unencode();` -返回值就是加密之后的参数
 
 # 设计思路 #
 

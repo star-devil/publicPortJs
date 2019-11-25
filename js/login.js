@@ -4,7 +4,7 @@
 
 //解密
 //把解密的对象存起来
-var unencodeObj = unencode.unencodeFun();
+var unencodeObj = publicPortFun.prototype.unencode();
 var PROXY_URL = "http://47.92.71.231:57772/emrviewdoctor/csp/EMRView.Biz.Proxy.loadPageNew.cls?"	// 后台入口
 // function commomAjaxString(action, params) {
 //     var reData = '';
